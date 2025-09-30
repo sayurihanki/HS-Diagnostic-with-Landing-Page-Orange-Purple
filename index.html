@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hell Diagnostic - Discover Your Soul's Path</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Enhanced Background with Floating Icons -->
+    <div class="particles-bg">
+        <div class="floating-icon flame">🔥</div>
+        <div class="floating-icon skull">💀</div>
+        <div class="floating-icon eye">👁️</div>
+    </div>
+    
+    <!-- Landing Page -->
+    <div id="landing-page" class="page active">
+        <!-- Navigation Header -->
+        <nav class="main-nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <span class="brand-icon">✨</span>
+                    <span class="brand-text">SoulPath</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#assessment" class="nav-link">Start</a>
+                </div>
+                <button class="nav-cta" onclick="scrollToAssessment()">Start Assessment</button>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-background">
+                <div class="gradient-orb orb-1"></div>
+                <div class="gradient-orb orb-2"></div>
+                <div class="gradient-orb orb-3"></div>
+                <div class="grain-overlay"></div>
+            </div>
+            
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span>✨ Discover Your Inner Journey</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Unlock Your
+                        <span class="title-highlight">Spiritual Potential</span>
+                        Through Self-Discovery
+                    </h1>
+                    
+                    <p class="hero-description">
+                        Embark on a transformative journey of self-awareness with our comprehensive 
+                        spiritual assessment. Gain deep insights into your emotional intelligence, 
+                        personal growth areas, and spiritual development path.
+                    </p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">27</div>
+                            <div class="stat-label">Insightful Questions</div>
+                </div>
+                        <div class="stat-card">
+                            <div class="stat-number">5</div>
+                            <div class="stat-label">Minutes to Complete</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">∞</div>
+                            <div class="stat-label">Personal Insights</div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-actions">
+                        <button class="btn-primary" onclick="scrollToAssessment()">
+                            <span>Begin Your Journey</span>
+                            <div class="btn-glow"></div>
+                        </button>
+                        <button class="btn-secondary" onclick="scrollToSection('features')">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="floating-card card-1">
+                        <div class="card-icon">🔮</div>
+                        <div class="card-text">Self-Awareness</div>
+                    </div>
+                    <div class="floating-card card-2">
+                        <div class="card-icon">⚖️</div>
+                        <div class="card-text">Balance</div>
+                    </div>
+                    <div class="floating-card card-3">
+                        <div class="card-icon">🌟</div>
+                        <div class="card-text">Growth</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="scroll-line"></div>
+                <span>Scroll to explore</span>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">Comprehensive Spiritual Analysis</h2>
+                    <p class="section-subtitle">
+                        Our advanced assessment system provides deep insights into multiple dimensions of your spiritual journey
+                    </p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <span>🧠</span>
+                        </div>
+                        <h3>Emotional Intelligence</h3>
+                        <p>Understand your emotional patterns, decision-making processes, and relationship dynamics through carefully crafted questions.</p>
+                        <div class="feature-highlight">94% Accuracy Rate</div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <span>🌱</span>
+                        </div>
+                        <h3>Personal Growth Areas</h3>
+                        <p>Identify stress patterns, compassion levels, and mindfulness practices to accelerate your spiritual development.</p>
+                        <div class="feature-highlight">5 Key Dimensions</div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <span>🎯</span>
+                        </div>
+                        <h3>Customized Guidance</h3>
+                        <p>Receive personalized insights and practical recommendations tailored to your unique spiritual journey and goals.</p>
+                        <div class="feature-highlight">100% Personalized</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="section-container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>A Journey of Self-Discovery</h2>
+                        <p class="lead-text">
+                            Our spiritual assessment combines ancient wisdom with modern psychology 
+                            to provide you with profound insights into your soul's journey.
+                        </p>
+                        <p>
+                            Through 27 carefully crafted questions, we analyze your responses across 
+                            multiple dimensions including emotional intelligence, stress management, 
+                            compassion levels, and spiritual awareness. The result is a comprehensive 
+                            understanding of your current spiritual state and clear guidance for growth.
+                        </p>
+                        
+                        <div class="about-features">
+                            <div class="about-feature">
+                                <span class="feature-check">✓</span>
+                                <span>Scientifically validated assessment methods</span>
+                            </div>
+                            <div class="about-feature">
+                                <span class="feature-check">✓</span>
+                                <span>Completely confidential and secure</span>
+                            </div>
+                            <div class="about-feature">
+                                <span class="feature-check">✓</span>
+                                <span>Instant results with detailed analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-visual">
+                        <div class="visual-card">
+                            <div class="chart-container">
+                                <div class="chart-segment segment-1"></div>
+                                <div class="chart-segment segment-2"></div>
+                                <div class="chart-segment segment-3"></div>
+                                <div class="chart-center">
+                                    <span class="chart-icon">🧘‍♀️</span>
+                                </div>
+                            </div>
+                            <p>Your Spiritual Composition</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Assessment CTA Section -->
+        <section id="assessment" class="assessment-section">
+            <div class="section-container">
+                <div class="assessment-content">
+                    <h2>Ready to Begin Your Spiritual Journey?</h2>
+                    <p>Take the first step towards understanding your soul's true nature and unlocking your spiritual potential.</p>
+                    
+                    <!-- ✅ Moved up from .modern-dashboard-grid -->
+                    <div class="modern-card featured-assessment-card fade-in" style="margin-top: 24px;">
+                    <div class="assessment-intro">
+                        <div class="warning-badge">
+                            <span>⚠️</span>
+                            <span>Important Spiritual Assessment</span>
+                        </div>
+                        
+                            <h3 class="key-message">Understanding Your Spiritual Path</h3>
+                        
+                        <p class="description-text">
+                            This assessment provides insights into spiritual tendencies and areas for growth. 
+                            Rather than focusing on negative outcomes, it emphasizes the universal opportunity 
+                            for spiritual development, self-reflection, and positive transformation that exists for everyone.
+                        </p>
+                        
+                        <div class="categories-grid">
+                            <div class="category-item">
+                                <h4 class="category-title">
+                                    <span>🔮</span>
+                                    <span>Self-Awareness Analysis</span>
+                                </h4>
+                                <ul class="category-list">
+                                    <li>Emotional Intelligence Assessment</li>
+                                    <li>Decision-Making Patterns</li>
+                                    <li>Relationship Dynamics</li>
+                                    <li>Communication Style Evaluation</li>
+                                </ul>
+                            </div>
+                            <div class="category-item">
+                                <h4 class="category-title">
+                                    <span>⚖️</span>
+                                    <span>Personal Growth Areas</span>
+                                </h4>
+                                <ul class="category-list">
+                                    <li>Stress Response Patterns</li>
+                                    <li>Compassion & Empathy Levels</li>
+                                    <li>Mindfulness Practice Assessment</li>
+                                    <li>Life Purpose Alignment</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="stats-grid">
+                                <div class="stat-card"><div class="stat-number">27</div><div class="stat-label">Assessment Questions</div></div>
+                                <div class="stat-card"><div class="stat-number">3-5</div><div class="stat-label">Minutes to Complete</div></div>
+                                <div class="stat-card"><div class="stat-number">100%</div><div class="stat-label">Confidential</div></div>
+                                <div class="stat-card"><div class="stat-number">∞</div><div class="stat-label">Growth Potential</div></div>
+                                <div class="stat-card"><div class="stat-number">5</div><div class="stat-label">Key Dimensions</div></div>
+                                <div class="stat-card"><div class="stat-number">24/7</div><div class="stat-label">Available</div></div>
+                            </div>
+                            </div>
+                            </div>
+                    <!-- /moved block -->
+                    
+                    <div class="assessment-form">
+                        <form id="user-info-form" class="spiritual-form">
+                            <div class="form-group">
+                                <label for="name">Name (Optional)</label>
+                                <input type="text" id="name" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="age">Age (Required)</label>
+                                <input type="number" id="age" placeholder="Your age" min="13" max="100" required>
+                            </div>
+                            
+                            <button type="submit" class="btn-assessment">
+                                <span>Start Your Assessment</span>
+                                <div class="btn-glow"></div>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <!-- Main Dashboard Content -->
+            <div class="modern-dashboard-grid">
+
+                <!-- Assessment Benefits -->
+                <div class="modern-card fade-in">
+                    <div class="modern-card-header">
+                        <h3 class="modern-card-title">What You'll Discover</h3>
+                        <span class="modern-card-icon">💡</span>
+                    </div>
+                    <ul class="category-list">
+                        <li>Personal strengths and growth opportunities</li>
+                        <li>Spiritual development insights</li>
+                        <li>Customized guidance for your journey</li>
+                        <li>Practical steps for positive change</li>
+                        <li>Understanding of universal spiritual principles</li>
+                    </ul>
+                </div>
+
+                <!-- Privacy & Support -->
+                <div class="modern-card fade-in">
+                    <div class="modern-card-header">
+                        <h3 class="modern-card-title">Privacy & Support</h3>
+                        <span class="modern-card-icon">🛡️</span>
+                    </div>
+                    <p class="modern-card-text">
+                        Your responses are completely confidential and used only for generating 
+                        your personalized assessment. The results focus on positive development 
+                        and spiritual growth rather than judgment or criticism.
+                    </p>
+                </div>
+
+                <!-- How It Works -->
+                <div class="modern-card fade-in">
+                    <div class="modern-card-header">
+                        <h3 class="modern-card-title">How It Works</h3>
+                        <span class="modern-card-icon">📋</span>
+                    </div>
+                    <div class="steps-container">
+                        <div class="step-item">
+                            <div class="step-number" style="background: #00d4ff;">1</div>
+                            <span class="step-text">Answer 27 thoughtful questions</span>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number" style="background: #9b59b6;">2</div>
+                            <span class="step-text">Receive personalized insights</span>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number" style="background: #f39c12;">3</div>
+                            <span class="step-text">Begin your growth journey</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scientific Foundation -->
+                <div class="modern-card fade-in">
+                    <div class="modern-card-header">
+                        <h3 class="modern-card-title">Scientific Foundation</h3>
+                        <span class="modern-card-icon">🔬</span>
+                    </div>
+                    <p class="modern-card-text" style="margin-bottom: 16px;">
+                        Based on established psychological assessment principles and spiritual development frameworks 
+                        used by wellness professionals worldwide.
+                    </p>
+                    <div class="accuracy-display">
+                        <span class="accuracy-label">Accuracy Rate</span>
+                        <span class="accuracy-value">94%</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Footer -->
+            <footer class="modern-footer">
+                <p>This assessment is designed for personal reflection and growth purposes. 
+                Results should be viewed as opportunities for positive development rather than definitive judgments.</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Questions Page -->
+    <div id="questions-page" class="page">
+        <div class="container">
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+                <span class="progress-text">Question <span id="current-q">1</span> of <span id="total-q">27</span></span>
+            </div>
+            
+            <div class="question-container">
+                <div class="question-card">
+                    <h2 id="question-text"></h2>
+                    <div id="question-options" class="options-container"></div>
+                    <div class="navigation-buttons">
+                        <button id="prev-btn" class="nav-btn" disabled>Previous</button>
+                        <button id="next-btn" class="nav-btn" disabled>Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Advanced Results Dashboard -->
+    <div id="results-page" class="page">
+        <div class="container">
+            <!-- Premium Header with Real-time Status -->
+            <header class="header card-premium">
+                <div class="header-content">
+                    <div class="profile-section">
+                        <div class="profile-avatar">
+                            🏮
+                        </div>
+                        <div class="profile-details">
+                            <h1>Hell Diagnosis Assessment</h1>
+                            <p class="profile-subtitle">Based on Happy Science Laws of Hell</p>
+                            <div class="spiritual-status-indicator">
+                                <div class="status-pulse"></div>
+                                <span>Spiritual Connection: Active</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="header-stats">
+                        <div class="clock-time" id="clock-time">2:11 PM</div>
+                        <div class="clock-date" id="clock-date">Wednesday, Sep 10</div>
+                        <div class="text-sm text-tertiary" style="margin-top: 8px;">
+                            Fourth Dimension Access: <span class="text-accent">Granted</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <!-- Personal Hell Diagnosis Result -->
+            <div class="card card-premium span-full" style="text-align: center; padding: 40px; margin-bottom: 32px;">
+                <h2 style="margin-bottom: 24px; font-size: 1.75rem;">Hell Diagnosis Result</h2>
+                <div style="display: flex; align-items: center; justify-content: space-between; text-align: left; flex-wrap: wrap; gap: 2rem;">
+                    <div style="flex: 0 0 auto;">
+                        <h3 style="font-size: 1.25rem; margin-bottom: 16px;" id="results-user-name">Name: Anonymous</h3>
+                        <h4 style="color: var(--accent-success); margin-bottom: 20px;">【Probability of Going to Hell】</h4>
+                        
+                        <div style="width: 160px; height: 160px; margin: 0 auto 24px; position: relative; display: flex; align-items: center; justify-content: center;">
+                            <div style="position: absolute; width: 100%; height: 100%; border: 4px solid rgba(255, 255, 255, 0.2); border-radius: 50%; border-top-color: var(--accent-success); border-right-color: var(--accent-success); animation: spin 3s linear infinite;"></div>
+                            <div style="font-size: 2.5rem; font-weight: 700; color: var(--text-primary); z-index: 2;">
+                                <span id="hell-percentage">0</span><span style="font-size: 1rem;">%</span>
+                            </div>
+                        </div>
+                        
+                        <p style="font-size: 1.25rem; margin-bottom: 16px;" id="hell-probability-text">Calculating...</p>
+                        <div class="risk-level" id="risk-level">CALCULATING...</div>
+                        <p style="font-size: 0.875rem; color: var(--text-secondary); margin-top: 8px;">*The probability value is an estimate (reference value).</p>
+                    </div>
+                    
+                    <div style="flex: 1; max-width: 500px; margin-left: 40px;">
+                        <div id="assessment-result-card" style="background: rgba(0, 255, 136, 0.1); border: 1px solid var(--accent-success); border-radius: var(--radius-lg); padding: 24px; margin-bottom: 20px;">
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+                                <span style="font-size: 1.5rem;">💡</span>
+                                <span style="font-weight: 600; color: var(--accent-success);">Assessment Result</span>
+                            </div>
+                            <p id="assessment-description" style="line-height: 1.6;">Your spiritual assessment is being calculated...</p>
+                        </div>
+                        
+                        <div style="background: rgba(0, 212, 255, 0.1); border: 1px solid var(--accent-primary); border-radius: var(--radius-lg); padding: 20px;">
+                            <h4 style="color: var(--accent-primary); margin-bottom: 12px;">【Possible Hells You Might Fall Into】</h4>
+                            <div id="hell-destinations" class="hell-destinations-container">
+                                <!-- Will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Advanced Dashboard Grid -->
+            <div class="dashboard-grid">
+                
+                <!-- Fourth Dimension Reception Center -->
+                <div class="card card-spiritual span-2">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title">Fourth Dimension Reception Center</h3>
+                            <p class="card-subtitle">Spiritual Transition Hub - Population: <span id="fourth-dim-pop">4.2B</span> souls</p>
+                        </div>
+                        <button id="access-fourth-dim" class="btn btn-spiritual btn-sm">Access Portal</button>
+                    </div>
+                    <div class="card-content">
+                        <div style="min-height: 300px; position: relative; overflow: hidden;">
+                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at center, rgba(0, 212, 255, 0.1) 0%, transparent 70%); border-radius: var(--radius-xl); animation: dimensionPulse 4s ease-in-out infinite alternate;"></div>
+                            <div style="position: relative; z-index: 2; padding: 20px;">
+                                <div class="metric-item">
+                                    <span class="metric-label">Reception Center Activity</span>
+                                    <span class="metric-value text-accent" id="reception-activity">High</span>
+                                </div>
+                                <div class="metric-item">
+                                    <span class="metric-label">Guardian Spirits Present</span>
+                                    <span class="metric-value" id="guardian-count">12,847</span>
+                                </div>
+                                <div class="metric-item">
+                                    <span class="metric-label">Awaiting Judgment</span>
+                                    <span class="metric-value text-warning" id="awaiting-judgment">3,421</span>
+                                </div>
+                                <p class="text-sm text-secondary" style="margin-top: 16px; font-style: italic;">
+                                    "Spirits who have been wandering around in this Phenomenal World after death will eventually be led to a reception center in the fourth dimension, guided by their deceased friends or parents, or by their guardian spirits."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Self-Reflection Assessment -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Self-Reflection Progress</h3>
+                        <span class="text-success font-semibold" id="reflection-score">89.3%</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="spiritual-meter">
+                            <div class="spiritual-meter-fill" id="reflection-meter" style="width: 89.3%;"></div>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-label">Mistakes Acknowledged</span>
+                            <span class="metric-value text-success" id="mistakes-acknowledged">23/26</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-label">Karmic Repairs Made</span>
+                            <span class="metric-value" id="karmic-repairs">17</span>
+                        </div>
+                        <button id="deep-reflection" class="btn btn-primary btn-sm" style="margin-top: 12px; width: 100%;">Begin Deep Reflection</button>
+                    </div>
+                    </div>
+                    
+                <!-- El Cantare Invocation System -->
+                <div class="card card-premium span-2">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title">El Cantare Invocation System</h3>
+                            <p class="card-subtitle">"Call upon the name of Lord El Cantare"</p>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div style="display: flex; gap: 24px;">
+                            <div class="invocation-counter" style="flex: 1;">
+                                <h4 style="margin-bottom: 16px; color: var(--accent-divine);">Daily Invocations</h4>
+                                <div style="font-size: 2.5rem; font-weight: 700; color: var(--text-primary); position: relative; z-index: 2;" id="invocation-count">0</div>
+                                <div style="color: var(--text-secondary); font-size: 0.875rem; position: relative; z-index: 2;">Target: 108 per day</div>
+                                <div class="progress-bar" style="margin-top: 16px; position: relative; z-index: 2;">
+                                    <div class="progress-fill" id="invocation-progress" style="width: 0%; background: var(--accent-divine);"></div>
+                                </div>
+                            </div>
+                            <div style="flex: 1;">
+                                <div class="metric-item">
+                                    <span class="metric-label">Spiritual Light Received</span>
+                                    <span class="metric-value text-divine" id="light-received">0.0kLx</span>
+                                </div>
+                                <div class="metric-item">
+                                    <span class="metric-label">Divine Connection</span>
+                                    <span class="metric-value text-success" id="divine-connection">Establishing</span>
+                                </div>
+                                <div class="metric-item" style="border: none;">
+                                    <span class="metric-label">Last Invocation</span>
+                                    <span class="metric-value" id="last-invocation">Never</span>
+                                </div>
+                                <button id="invoke-el-cantare" class="btn btn-divine" style="width: 100%; margin-top: 16px;">
+                                    🙏 Invoke El Cantare
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soul Dimensions Analysis -->
+                <div class="card dimensions-card">
+                    <div class="card-header">
+                        <h3 class="card-title">📊 Soul Dimensions Analysis</h3>
+                    </div>
+                    <div class="card-content">
+                    <div class="dimensions-container" id="dimensions-container">
+                        <!-- Dimensions will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soul Composition Chart -->
+                <div class="card chart-card">
+                    <div class="card-header">
+                        <h3 class="card-title">🌀 Soul Composition</h3>
+                    </div>
+                    <div class="card-content">
+                    <div class="chart-container">
+                        <canvas id="soul-chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spiritual Vibration Monitor -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Spiritual Vibration</h3>
+                        <span class="text-success" id="current-vibration">4.0Hz</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="spiritual-meter">
+                            <div class="spiritual-meter-fill" id="vibration-meter" style="width: 67%;"></div>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-label">Current Level</span>
+                            <span class="metric-value text-success" id="dimension-level">Fourth Dimension</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-label">Earthbound Risk</span>
+                            <span class="metric-value" id="earthbound-risk">Low</span>
+                        </div>
+                        <div class="metric-item" style="border: none;">
+                            <span class="metric-label">Next Ascension</span>
+                            <span class="metric-value" id="ascension-target">5.0Hz Target</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reflection Journal -->
+                <div class="card span-full">
+                    <div class="card-header">
+                        <h3 class="card-title">Daily Reflection Journal</h3>
+                        <div style="display: flex; gap: 8px;">
+                            <button id="save-reflection" class="btn btn-success btn-sm">Save Entry</button>
+                            <button id="ai-analysis" class="btn btn-primary btn-sm">AI Analysis</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="reflection-journal">
+                            <textarea id="reflection-text" placeholder="Reflect on your thoughts, actions, and spiritual progress today. What mistakes did you make? How can you improve? What brought you closer to the light?
+
+'With irreparable things, there's no sense in practicing self-reflection. But what has happened within our own minds can be repaired. By self-reflecting with an honest heart, we can go through all of our mistakes and make them vanish as if we were going over them with a white-out pen.'"></textarea>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px;">
+                            <span class="text-sm text-secondary">Word count: <span id="word-count">0</span></span>
+                            <span class="text-sm text-secondary">Reflection score will update based on your entries</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spiritual Actions Center -->
+                <div class="card span-full">
+                    <div class="card-header">
+                        <h3 class="card-title">Advanced Spiritual Actions</h3>
+                        <span class="text-secondary">Functional spiritual practice tools</span>
+                    </div>
+                    <div class="card-content">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+                            <button id="meditation-session" class="btn btn-spiritual">🧘‍♀️ Deep Meditation</button>
+                            <button id="compassion-practice" class="btn btn-success">❤️ Practice Compassion</button>
+                            <button id="study-laws" class="btn btn-primary">📚 Study Laws of Hell</button>
+                            <button id="karmic-repair" class="btn btn-warning">🔧 Karmic Repair Tool</button>
+                            <button id="dimension-travel" class="btn btn-divine">🚀 Dimension Explorer</button>
+                            <button id="spiritual-protection" class="btn btn-ghost">🛡️ Spiritual Protection</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Restart Section -->
+                <div class="card span-full" style="text-align: center;">
+                    <div class="card-content">
+                        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                            <button id="restart-btn" class="btn btn-secondary">🔄 Take Test Again</button>
+                            <button id="share-btn" class="btn btn-primary">📤 Share Results</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Fourth Dimension Portal Interface -->
+    <div id="fourth-dimension-interface" class="spiritual-interface" style="display: none;">
+        <div class="container">
+            <div class="card card-spiritual span-full" style="min-height: 80vh;">
+                <div class="card-header">
+                    <div>
+                        <h2 class="card-title">🌌 Fourth Dimension Reception Center</h2>
+                        <p class="card-subtitle">Spiritual guidance and dimensional exploration</p>
+                    </div>
+                    <button id="return-dashboard" class="btn btn-secondary btn-sm">← Return to Dashboard</button>
+                </div>
+                <div class="card-content">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; height: 100%;">
+                        <div>
+                            <h3 style="margin-bottom: 20px;">Guardian Spirit Guidance</h3>
+                            <div id="guardian-messages" style="background: rgba(255, 255, 255, 0.1); border-radius: var(--radius-lg); padding: 20px; margin-bottom: 24px; min-height: 200px; max-height: 300px; overflow-y: auto;">
+                                <div class="guardian-message" style="margin-bottom: 16px; padding: 16px; background: rgba(255, 255, 255, 0.05); border-radius: var(--radius-md); border-left: 3px solid var(--accent-spiritual);">
+                                    <p style="font-style: italic; margin: 0;">"Welcome, dear soul. You have accessed the Reception Center where spirits reflect on their earthly lives. Continue your spiritual practice to maintain your connection to the light."</p>
+                                    <small style="color: var(--text-tertiary); margin-top: 8px; display: block;">- Guardian Spirit Aurelia</small>
+                                </div>
+                            </div>
+                            
+                            <h4>Spiritual Assessment Questions</h4>
+                            <div id="assessment-questions">
+                                <div class="question-card" style="background: rgba(255, 255, 255, 0.1); border-radius: var(--radius-md); padding: 16px; margin-bottom: 16px;">
+                                    <p style="font-weight: 500; margin-bottom: 12px;">How often do you put others' needs before your own desires?</p>
+                                    <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                                        <button class="btn btn-ghost btn-sm assessment-option" data-question="1" data-value="always">Always</button>
+                                        <button class="btn btn-ghost btn-sm assessment-option" data-question="1" data-value="often">Often</button>
+                                        <button class="btn btn-ghost btn-sm assessment-option" data-question="1" data-value="sometimes">Sometimes</button>
+                                        <button class="btn btn-ghost btn-sm assessment-option" data-question="1" data-value="rarely">Rarely</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3 style="margin-bottom: 20px;">Dimensional Exploration</h3>
+                            <div id="dimension-explorer" style="background: var(--bg-glass); border-radius: var(--radius-lg); padding: 24px; text-align: center; margin-bottom: 24px;">
+                                <div style="width: 200px; height: 200px; margin: 0 auto 20px; border-radius: 50%; background: radial-gradient(circle, var(--accent-primary) 0%, transparent 70%); animation: dimensionPulse 3s infinite; display: flex; align-items: center; justify-content: center; font-size: 3rem;">🌌</div>
+                                <h4 id="current-dimension">Current Location: Fourth Dimension</h4>
+                                <p style="color: var(--text-secondary); margin: 12px 0;">Population: <span id="dimension-population">4.2 billion souls</span></p>
+                                <button id="explore-higher" class="btn btn-primary">Explore Fifth Dimension</button>
+                            </div>
+                            
+                            <h4>Spiritual Guidance Library</h4>
+                            <div style="display: grid; gap: 12px;">
+                                <button class="spiritual-guide-btn btn btn-ghost" data-guide="self-reflection">📝 Laws of Self-Reflection</button>
+                                <button class="spiritual-guide-btn btn btn-ghost" data-guide="love">❤️ The Nature of Love</button>
+                                <button class="spiritual-guide-btn btn btn-ghost" data-guide="karma">⚖️ Understanding Karma</button>
+                                <button class="spiritual-guide-btn btn btn-ghost" data-guide="enlightenment">✨ Path to Enlightenment</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Deep Reflection Interface -->
+    <div id="deep-reflection-interface" class="spiritual-interface" style="display: none;">
+        <div class="container">
+            <div class="card card-premium span-full" style="min-height: 80vh;">
+                <div class="card-header">
+                    <div>
+                        <h2 class="card-title">🧘‍♀️ Deep Reflection Practice</h2>
+                        <p class="card-subtitle">Guided self-examination and spiritual cleansing</p>
+                    </div>
+                    <button id="return-dashboard-2" class="btn btn-secondary btn-sm">← Return to Dashboard</button>
+                </div>
+                <div class="card-content">
+                    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 32px;">
+                        <div>
+                            <div id="reflection-session">
+                                <h3>Current Reflection Session</h3>
+                                <div id="reflection-prompt-area" style="background: rgba(255, 255, 255, 0.1); border-radius: var(--radius-lg); padding: 24px; margin-bottom: 24px; min-height: 200px;">
+                                    <h4 id="current-prompt-title" style="color: var(--accent-primary); margin-bottom: 16px;">Examine Your Daily Actions</h4>
+                                    <p id="current-prompt-text" style="line-height: 1.8; margin-bottom: 20px;">"Reflect deeply on your actions today. Did you act with love and compassion toward others? Were there moments when ego, pride, or selfishness guided your decisions? Remember, honest self-reflection is the key to spiritual purification."</p>
+                                    <div style="display: flex; gap: 12px;">
+                                        <button id="next-prompt" class="btn btn-primary btn-sm">Next Reflection</button>
+                                        <button id="deeper-guidance" class="btn btn-spiritual btn-sm">Deeper Guidance</button>
+                                    </div>
+                                </div>
+                                
+                                <h4>Your Reflection Journal</h4>
+                                <textarea id="reflection-journal" style="width: 100%; height: 150px; background: rgba(255, 255, 255, 0.1); border: 1px solid var(--border-glass); border-radius: var(--radius-md); padding: 16px; color: var(--text-primary); font-family: inherit; resize: vertical;" placeholder="Write your honest reflections here. What did you learn about yourself? What mistakes need healing? How can you grow spiritually?"></textarea>
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 12px;">
+                                    <span class="text-sm text-secondary">Session time: <span id="reflection-timer">0:00</span></span>
+                                    <div style="display: flex; gap: 8px;">
+                                        <button id="save-session" class="btn btn-success btn-sm">Save Session</button>
+                                        <button id="complete-reflection" class="btn btn-primary">Complete Reflection</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3>Reflection Progress</h3>
+                            <div style="background: var(--bg-glass); border-radius: var(--radius-lg); padding: 20px; margin-bottom: 24px;">
+                                <div class="metric-item" style="padding: 8px 0;">
+                                    <span class="metric-label">Today's Sessions</span>
+                                    <span class="metric-value" id="daily-sessions">1</span>
+                                </div>
+                                <div class="metric-item" style="padding: 8px 0;">
+                                    <span class="metric-label">Total Reflection Time</span>
+                                    <span class="metric-value" id="total-reflection-time">0 minutes</span>
+                                </div>
+                                <div class="metric-item" style="padding: 8px 0; border: none;">
+                                    <span class="metric-label">Spiritual Cleansing</span>
+                                    <span class="metric-value text-success" id="cleansing-progress">50%</span>
+                                </div>
+                            </div>
+                            
+                            <h4>Guided Reflections</h4>
+                            <div style="display: grid; gap: 8px;">
+                                <button class="reflection-topic-btn btn btn-ghost btn-sm" data-topic="relationships">💝 Relationships & Love</button>
+                                <button class="reflection-topic-btn btn btn-ghost btn-sm" data-topic="work">⚒️ Work & Purpose</button>
+                                <button class="reflection-topic-btn btn btn-ghost btn-sm" data-topic="anger">😤 Anger & Resentment</button>
+                                <button class="reflection-topic-btn btn btn-ghost btn-sm" data-topic="pride">👑 Pride & Ego</button>
+                                <button class="reflection-topic-btn btn btn-ghost btn-sm" data-topic="material">💰 Material Attachments</button>
+                                <button class="reflection-topic-btn btn btn-ghost btn-sm" data-topic="forgiveness">🕊️ Forgiveness</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- El Cantare Invocation Interface -->
+    <div id="el-cantare-interface" class="spiritual-interface" style="display: none;">
+        <div class="container">
+            <div class="card card-premium span-full" style="min-height: 80vh;">
+                <div class="card-header">
+                    <div>
+                        <h2 class="card-title">🙏 El Cantare Invocation Practice</h2>
+                        <p class="card-subtitle">Connect with the Divine Light of Lord El Cantare</p>
+                    </div>
+                    <button id="return-dashboard-3" class="btn btn-secondary btn-sm">← Return to Dashboard</button>
+                </div>
+                <div class="card-content">
+                    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 32px;">
+                        <div>
+                            <div id="invocation-practice-area" style="text-align: center; background: var(--bg-glass); border-radius: var(--radius-lg); padding: 40px; margin-bottom: 24px;">
+                                <div style="width: 150px; height: 150px; margin: 0 auto 24px; border-radius: 50%; background: linear-gradient(135deg, var(--accent-divine) 0%, var(--accent-spiritual) 100%); display: flex; align-items: center; justify-content: center; font-size: 4rem; animation: divineGlow 3s infinite alternate;">
+                                    ✨
+                                </div>
+                                <h3 id="invocation-status" style="margin-bottom: 16px; color: var(--accent-divine);">Prepare Your Heart</h3>
+                                <p id="invocation-instruction" style="margin-bottom: 24px; font-size: 1.125rem;">Close your eyes, center your breathing, and open your heart to receive divine light.</p>
+                                
+                                <div id="invocation-controls" style="display: flex; gap: 16px; justify-content: center;">
+                                    <button id="begin-invocation" class="btn btn-divine btn-lg">Begin Invocation</button>
+                                    <button id="guided-practice" class="btn btn-spiritual">Guided Practice</button>
+                                </div>
+                                
+                                <div id="invocation-counter-display" style="margin-top: 24px; display: none;">
+                                    <h4 style="color: var(--accent-divine); margin-bottom: 12px;">Current Session</h4>
+                                    <div style="font-size: 3rem; font-weight: 700; margin-bottom: 8px;" id="session-count">0</div>
+                                    <p style="color: var(--text-secondary);">Invocations completed</p>
+                                    <div class="progress-bar" style="margin: 16px 0;">
+                                        <div class="progress-fill" id="session-progress" style="width: 0%; background: var(--accent-divine);"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div id="invocation-text-area" style="background: rgba(255, 255, 255, 0.1); border-radius: var(--radius-lg); padding: 24px;">
+                                <h4 style="margin-bottom: 16px; text-align: center;">Sacred Invocation</h4>
+                                <div id="invocation-text" style="font-size: 1.25rem; text-align: center; line-height: 2; color: var(--accent-divine); font-weight: 500;">
+                                    "Lord El Cantare, Creator of our souls and universe,<br>
+                                    I call upon your divine light.<br>
+                                    Please illuminate my path to enlightenment<br>
+                                    and guide me toward the World of Light."
+                                </div>
+                                <p style="text-align: center; margin-top: 20px; font-style: italic; color: var(--text-secondary);">Repeat with sincere devotion and an open heart</p>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3>Divine Connection Status</h3>
+                            <div style="background: var(--bg-glass); border-radius: var(--radius-lg); padding: 20px; margin-bottom: 24px;">
+                                <div class="metric-item" style="padding: 8px 0;">
+                                    <span class="metric-label">Connection Strength</span>
+                                    <span class="metric-value text-divine" id="connection-strength">Establishing</span>
+                                </div>
+                                <div class="metric-item" style="padding: 8px 0;">
+                                    <span class="metric-label">Divine Light Received</span>
+                                    <span class="metric-value" id="divine-light-display">0.0kLx</span>
+                                </div>
+                                <div class="metric-item" style="padding: 8px 0;">
+                                    <span class="metric-label">Today's Invocations</span>
+                                    <span class="metric-value text-success" id="daily-invocations-display">0/108</span>
+                                </div>
+                                <div class="metric-item" style="padding: 8px 0; border: none;">
+                                    <span class="metric-label">Spiritual Protection</span>
+                                    <span class="metric-value text-success" id="spiritual-protection">Building</span>
+                                </div>
+                            </div>
+                            
+                            <h4>Invocation Benefits</h4>
+                            <div style="display: grid; gap: 12px;">
+                                <div style="background: rgba(243, 156, 18, 0.1); border: 1px solid rgba(243, 156, 18, 0.3); border-radius: var(--radius-md); padding: 12px;">
+                                    <h5 style="color: var(--accent-divine); margin-bottom: 4px;">Divine Protection</h5>
+                                    <p style="font-size: 0.875rem; color: var(--text-secondary);">Shield from negative spiritual influences</p>
+                                </div>
+                                <div style="background: rgba(155, 89, 182, 0.1); border: 1px solid rgba(155, 89, 182, 0.3); border-radius: var(--radius-md); padding: 12px;">
+                                    <h5 style="color: var(--accent-spiritual); margin-bottom: 4px;">Wisdom Illumination</h5>
+                                    <p style="font-size: 0.875rem; color: var(--text-secondary);">Receive divine guidance for life decisions</p>
+                                </div>
+                                <div style="background: rgba(0, 212, 255, 0.1); border: 1px solid rgba(0, 212, 255, 0.3); border-radius: var(--radius-md); padding: 12px;">
+                                    <h5 style="color: var(--accent-primary); margin-bottom: 4px;">Spiritual Ascension</h5>
+                                    <p style="font-size: 0.875rem; color: var(--text-secondary);">Accelerate your path to higher dimensions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Spiritual Actions -->
+    <div id="spiritual-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(10px); z-index: 1500; align-items: center; justify-content: center;">
+        <div style="background: var(--bg-glass); backdrop-filter: var(--blur-strong); border: 1px solid var(--border-glass-strong); border-radius: var(--radius-xl); padding: 40px; text-align: center; max-width: 500px; margin: 24px; box-shadow: var(--shadow-glass-strong);">
+            <div id="modal-icon" style="font-size: 4rem; margin-bottom: 20px;">✨</div>
+            <h3 id="modal-title" style="margin-bottom: 16px;">Spiritual Action Completed</h3>
+            <p id="modal-message" class="text-secondary" style="line-height: 1.6;">Your spiritual vibration has increased. Continue your practice to ascend to higher dimensions.</p>
+            <div style="margin-top: 24px;">
+                <button id="modal-close" class="btn btn-primary">Continue Journey</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Action Button -->
+    <div id="floating-menu" class="floating-menu">
+        <div class="fab-main" id="fab-main">
+            ⚡
+        </div>
+        <div class="fab-options" id="fab-options">
+            <button class="fab-option" id="fab-restart" title="Restart Test">🔄</button>
+            <button class="fab-option" id="fab-top" title="Go to Top">⬆️</button>
+            <button class="fab-option" id="fab-share" title="Share">📤</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
